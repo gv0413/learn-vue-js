@@ -1,0 +1,24 @@
+<!-- 일반 웹  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        var div = document.querySelector('#app');
+        console.log(div);
+        var str = 'Hello world'
+        div.innerHTML = str
+
+        str = 'hello world!!!'
+        //바뀐 데이터의 내용이 반영되지 않음
+        div.innerHTML = str
+        //다시 div에 접근 해야지만 저장했을때 화면에 반영된다. 데이터바인딩 개념으로 이해하면 될듯.
+    </script>
+</body>
+</html>
